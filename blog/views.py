@@ -14,3 +14,5 @@ def today_is(request):
                    'template_name': 'blog/nav.html',
                    'base_dir': settings.BASE_DIR}
                   )
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
